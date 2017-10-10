@@ -10,11 +10,7 @@ import PlaygroundSupport
  You use the *for-in* loop to iterate over ranges of numbers.
  Here is a simple loop that adds all the numbers from 1 to 4.
  */
-var sum = 0
-for value in 1...4 {
-    sum = sum + value
-}
-sum         // equals 10 at this point
+
 
 /*:
  ### Skipping values in a range
@@ -27,29 +23,9 @@ sum         // equals 10 at this point
 // Create canvas
 let canvas = Canvas(width: 300, height: 400)
 
-// Line width
-canvas.defaultLineWidth = 5
+for i in stride
+    
 
-// Draw the "rungs" of a ladder
-for y in stride(from: 0, through: 400, by: 50) {
-    
-    y
-    
-    // Draw each rung
-    canvas.drawLine(fromX: 100, fromY: y, toX: 200, toY: y)
-    
-    canvas
-    
-}
-/*:
- ### Counting backwards
- You can use a *for-in* loop with the *stride* function to count backwards as well.
- */
-// Countdown, then blast off
-for value in stride(from: 10, through: 0, by: -1) {
-    print(value)
-}
-print("Blast off!")
 //: **NOTE:** Output will show up in the Debug area.
 //:
 //: If you don't see this, press **Command-Shift-Y**.
